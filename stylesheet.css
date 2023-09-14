@@ -1,12 +1,30 @@
+html {
+    background-color: rgb(255, 196, 196);
+}
 body{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-width: 100vw;
     min-height: 100vh;
 }
 
-.container {
-    background-color: pink;
+.container, button, .row {
+    display: flex;
+    flex-grow: 1;
+}
+.calculator, .buttons, body {
+    flex-direction: column;
+}
+.calculator {
+    background-color: rgba(255, 255, 255, 50%);
+    min-width: 20vw;
+    flex-basis: 40vh;
+    max-height: 80vh;
+}
+.display {
+    background-color: gray;
+}
+button{
+    flex:auto;
 }
