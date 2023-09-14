@@ -20,7 +20,8 @@ body{
 }
 .calculator {
     padding: 55px;
-    background-color: rgba(255, 240, 240, 50%);
+    /*background-color: rgba(255, 240, 240, 50%);*/
+    background: linear-gradient(to bottom right, rgba(255, 217, 206, 0.171), rgba(228, 93, 122, 0.5));
     min-width: 20vw;
     flex-basis: 20vh;
     max-height: 50vh;
@@ -33,8 +34,20 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: salmon;
+    background-color: rgb(250, 229, 227);
+    padding: 1rem;
+    font-size: 200%;
 }
 button{
     flex:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear{
+    max-width: 50%;
+}
+.separator {
+    max-height: 10%;
 }
