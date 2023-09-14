@@ -1,6 +1,8 @@
 html {
     background-color: rgb(255, 196, 196);
-}
+    background-image: url(https://i.pinimg.com/originals/f7/b7/11/f7b7117d3facfb6a5754e68797961b6b.jpg);
+    background-size: 30%;
+}   
 body{
     display: flex;
     justify-content: center;
@@ -17,13 +19,21 @@ body{
     flex-direction: column;
 }
 .calculator {
-    background-color: rgba(255, 255, 255, 50%);
+    padding: 55px;
+    background-color: rgba(255, 240, 240, 50%);
     min-width: 20vw;
-    flex-basis: 40vh;
-    max-height: 80vh;
+    flex-basis: 20vh;
+    max-height: 50vh;
+    border: solid 6px rgba(255, 255, 255, 70%);
+    border-left: solid 6px rgba(200, 100, 120, 50%);
+    border-top: solid 6px rgba(200, 100, 120, 50%);
+    border-radius: 15px;
 }
 .display {
-    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: salmon;
 }
 button{
     flex:auto;
