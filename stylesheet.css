@@ -38,6 +38,8 @@ body{
     padding: 1rem;
     font-size: 200%;
 }
+
+/* Make buttons flexible */
 button{
     flex:auto;
     display: flex;
