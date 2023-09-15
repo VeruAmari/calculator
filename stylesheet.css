@@ -5,9 +5,10 @@
 }
 
 html {
-    background-color: rgb(255, 196, 196);
+    /*background-color: rgb(255, 196, 196);
     background-image: url(https://i.pinimg.com/originals/f7/b7/11/f7b7117d3facfb6a5754e68797961b6b.jpg);
-    background-size: 30%;
+    background-size: 30%;*/
+    background: linear-gradient(to bottom right, rgb(255, 236, 235), rgb(253, 186, 198));
 }   
 body{
     display: flex;
