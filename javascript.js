@@ -33,21 +33,33 @@ function updateDisplay(newContent, addOrDel) {
     if (addOrDel.includes('clear')){
         display.textContent = 0;
     } else if (addOrDel.includes("del")){
+        /*
+        Erase last character from display.
+        */
         if (display.textContent.length <= 1){
             display.textContent = 0;
         } else {
             display.textContent = display.textContent.slice(0, -1);
         }
     } else if (addOrDel.includes('op=')){
+        /* 
+        Perform arithmetic and display result.
+        */
         let operation = display.textContent.match(/[\+\-\*\/]/);
+
         console.log(operation);
         let nums = display.textContent.split(/[\+\-\*\/]/);
         console.log(nums);
         let result = operate(operation[0], nums[0], nums[1])
         display.textContent = result;
+
+    } else if (newContent.match(/[\+\-\*\/]/) && display.textContent.match(/[\+\-\*\/]/)) {
+
+        console.log("Error, operation aleady has an operand.")
+
     } else {
         if (newContent.includes(".") && display.textContent.includes('.')) {
-            
+            console.log("Error, only one . allowed per operation.")
         } else if (display.textContent == "0" && addOrDel.includes("num")) {
             display.textContent = newContent;
         } else {
