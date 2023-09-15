@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 html {
     background-color: rgb(255, 196, 196);
     background-image: url(https://i.pinimg.com/originals/f7/b7/11/f7b7117d3facfb6a5754e68797961b6b.jpg);
@@ -11,7 +17,7 @@ body{
     min-height: 100vh;
 }
 
-.container, button, .row {
+.container, .row {
     display: flex;
     flex-grow: 1;
 }
@@ -34,17 +40,40 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: rgb(250, 229, 227);
-    padding: 1rem;
+    background-color: rgb(255, 236, 236);
+    padding: 0 1rem;
     font-size: 200%;
+    border-radius: 15px;
+}
+.signature {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    margin-bottom: -5px;
+    color: white;
 }
 
-/* Make buttons flexible */
 button{
+    /* Make buttons flexible */
+    flex-grow: 1;
     flex:auto;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Rest of styling*/
+    border: 0;
+    border-radius: 0px;
+
+    font-weight: bold;
+    font-size: large;
+}
+/* Colors */
+button, .display {
+    color: rgb(240, 90, 90);
+}
+button:hover {
+
 }
 
 #clear{

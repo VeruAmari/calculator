@@ -26,3 +26,42 @@ function operate (operation, x, y) {
             return divide(x, y);
     }
 }
+
+function updateDisplay(newContent, addOrDel) {
+    let display = document.querySelector(".display")
+    
+    if (addOrDel.includes('clear')){
+        display.textContent = 0;
+    } else if (addOrDel.includes("del")){
+        if (display.textContent.length <= 1){
+            display.textContent = 0;
+        } else {
+            display.textContent = display.textContent.slice(0, -1);
+        }
+    } else if (addOrDel.includes('op=')){
+        let operation = display.textContent.match(/[\+\-\*\/]/);
+        console.log(operation);
+        let nums = display.textContent.split(/[\+\-\*\/]/);
+        console.log(nums);
+        let result = operate(operation[0], nums[0], nums[1])
+        display.textContent = result;
+    } else {
+        if (newContent.includes(".") && display.textContent.includes('.')) {
+            
+        } else if (display.textContent == "0" && addOrDel.includes("num")) {
+            display.textContent = newContent;
+        } else {
+            display.textContent += newContent;
+        }
+    }
+}
+
+function parseOperation(button){
+    updateDisplay(button.target.textContent, button.target.id)
+    console.log(button.target.id);
+}
+
+let buttons = document.querySelectorAll("button")
+buttons.forEach((button) => {
+    button.addEventListener("mousedown", parseOperation);
+})
