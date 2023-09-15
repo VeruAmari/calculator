@@ -5,9 +5,6 @@
 }
 
 html {
-    /*background-color: rgb(255, 196, 196);
-    background-image: url(https://i.pinimg.com/originals/f7/b7/11/f7b7117d3facfb6a5754e68797961b6b.jpg);
-    background-size: 30%;*/
     background: linear-gradient(to bottom right, rgb(255, 236, 235), rgb(253, 186, 198));
 }   
 body{
@@ -41,10 +38,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: rgb(255, 236, 236);
+    background-color: rgb(255, 247, 247);
     padding: 0 1rem;
     font-size: 200%;
-    border-radius: 15px;
+    border-radius: 10px;
+    border: solid 4px rgba(255, 255, 255, 90%);
+    border-right: solid 4px rgba(200, 90, 110, 50%);
+    border-bottom: solid 4px rgba(200, 90, 110, 50%);
 }
 .signature {
     display: flex;
@@ -69,12 +69,22 @@ button{
     font-weight: bold;
     font-size: large;
 }
+.buttons.container {
+    border-radius: 15px;
+    border: 5px solid white;
+}
 /* Colors */
 button, .display {
     color: rgb(240, 90, 90);
 }
+button {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 70%), rgba(255, 200, 200, 50%));
+}
 button:hover {
-
+    background-color: white;
+}
+button:active {
+    background-color: rgb(255, 80, 80);
 }
 
 #clear{
