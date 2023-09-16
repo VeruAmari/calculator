@@ -23,8 +23,9 @@ body{
     flex-direction: column;
 }
 .calculator {
-    padding: 55px;
-    /*background-color: rgba(255, 240, 240, 50%);*/
+    padding: 5%;
+    /*
+    background-color: rgba(255, 240, 240, 50%);*/
     background: linear-gradient(to bottom right, rgba(255, 217, 206, 0.171), rgba(228, 93, 122, 0.5));
     min-width: 20vw;
     flex-basis: 20vh;
@@ -40,7 +41,7 @@ body{
     justify-content: flex-end;
     background-color: rgb(255, 247, 247);
     padding: 0 1rem;
-    font-size: 200%;
+    font-size: 150%;
     border-radius: 10px;
     border: solid 4px rgba(255, 255, 255, 90%);
     border-right: solid 4px rgba(200, 90, 110, 50%);
@@ -92,4 +93,8 @@ button:active {
 }
 .separator {
     max-height: 10%;
+}
+
+@media screen {
+    
 }
