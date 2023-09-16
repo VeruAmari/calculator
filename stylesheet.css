@@ -23,6 +23,7 @@ body{
     flex-direction: column;
 }
 .calculator {
+    box-shadow: 5px 5px 15px 5px #4d2b3b8a;
     padding: 5%;
     /*
     background-color: rgba(255, 240, 240, 50%);*/
